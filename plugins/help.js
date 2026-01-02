@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const SUPPORT_LOG_FILE = path.join(__dirname, "../lib/support-logs.json");
-const OWNER_JID = "254743706010@s.whatsapp.net"; // ✅ Replace with your JID
+const OWNER_JID = "254114141192@s.whatsapp.net"; // ✅ Replace with your JID
 
 // ✅ Auto-create support logs file if missing
 function loadSupportLogs() {
@@ -78,7 +78,7 @@ module.exports = {
 *ERROR MESSAGE*
 *${q}*
 
-*SILVA-MD MINI BOT*
+*BELTAH-MD MINI BOT*
 `.trim();
 
       await socket.sendMessage(OWNER_JID, {

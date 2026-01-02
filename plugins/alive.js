@@ -15,17 +15,17 @@ module.exports = {
 
       const caption = `*HELLO☺️*
       *KEEP SMILLING😇*
-      *WELCOME THIS IS SILVA MINI 🤲*
+      *WELCOME THIS IS BELTAH-MINI-BOT 🤲*
       *THANKS YOU FOR USING US ☺️*
       
       *👑 OWNER INFO 👑*
-https://github.com/SilvaTechB
+https://github.com/Beltahinfo
 
 *👑 SUPPORT CHANNEL 👑*
-https://whatsapp.com/channel/0029VaAkETLLY6d8qhLmZt2v
+https://whatsapp.com/channel/0029VARHDBKKMCPKP9B2UH2F
 
-*👑 SUPPORT GROUP 👑*
-https://chat.whatsapp.com/J1h8UQencpe7wTwvS7hHxj
+*👑 SUPPORT ADMIN 👑*
+https://wa.me/254114141192
 `;
 
       // Envoyer simplement le message avec l'image

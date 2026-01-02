@@ -2,12 +2,12 @@ const axios = require("axios");
 const config = require("../config");
 
 // App URL - Updated to match your domain
-const APP_BASE_URL = 'https://silvaconnect.silvatech.top';
+const APP_BASE_URL = 'https://mini-beltah-md.onrender.com';
 
 module.exports = {
   command: "pair",
-  desc: "Get pairing code for SILVA TECH AI bot",
-  use: ".pair 254743706010",
+  desc: "Get pairing code for BELTAH TECH AI bot",
+  use: ".pair 254114141192",
   filename: __filename,
   category: "SETUP",
   owner: false,
@@ -16,7 +16,7 @@ module.exports = {
     try {
       // Modern message templates
       const messages = {
-        welcome: `🤖 *SILVA TECH BOT SETUP* 🤖
+        welcome: `🤖 *BELTAH TECH BOT SETUP* 🤖
 
 ✨ Ready to activate your personal AI assistant?
 
@@ -24,7 +24,7 @@ Simply send:
 *.pair YOUR_NUMBER*
 
 📱 *Example:*
-\`.pair 254743706010\`
+\`.pair 254114141192\`
 
 I'll generate your unique pairing code instantly!`,
 
@@ -36,21 +36,21 @@ Please provide a valid WhatsApp number with country code.
 \`+[CountryCode][Number]\`
 
 📋 *Examples:*
-• \`+254743706010\`
+• \`+254114141192\`
 • \`+1234567890\`
 • \`+447123456789\``,
 
         processing: `⏳ *Processing Your Request...*
 
 🔍 Validating number...
-🔄 Connecting to SILVA TECH...
+🔄 Connecting to BELTAH TECH...
 📱 Generating pairing code...
 
 Please wait a moment...`,
 
         success: `✅ *PAIRING CODE GENERATED*
 
-🎉 Your SILVA TECH Bot is ready for activation!
+🎉 Your BELTAH TECH Bot is ready for activation!
 
 📋 *Your Pairing Code:*
 \`{code}\`
@@ -93,7 +93,7 @@ Unable to generate pairing code at the moment.
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363200367779016@newsletter',
-                newsletterName: 'SILVA TECH',
+                newsletterName: 'BELTAH TECH',
                 serverMessageId: 143
               }
             }
@@ -139,7 +139,7 @@ Unable to generate pairing code at the moment.
       const response = await axios.get(apiUrl, {
         timeout: 30000,
         headers: {
-          'User-Agent': 'SILVA-TECH-BOT/2.0.0',
+          'User-Agent': 'BELTAH-TECH-BOT/2.0.0',
           'Accept': 'application/json'
         }
       });
@@ -163,7 +163,7 @@ Unable to generate pairing code at the moment.
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
               newsletterJid: '120363200367779016@newsletter',
-              newsletterName: 'SILVA TECH',
+              newsletterName: 'BELTAH TECH',
               serverMessageId: 143
             }
           }
@@ -218,7 +218,7 @@ We're working to restore service as quickly as possible.`;
 The pairing service is temporarily unavailable.
 
 📞 *Contact Support:*
-Visit silvatech.top for assistance.`;
+Visit https://mini-beltah-md.onrender.com for assistance.`;
       }
 
       await socket.sendMessage(
@@ -239,11 +239,11 @@ Visit silvatech.top for assistance.`;
   help: () => {
     return {
       name: "pair",
-      description: "Generate pairing code for SILVA TECH bot",
+      description: "Generate pairing code for BELTAH TECH bot",
       usage: ".pair <number>",
       examples: [
-        ".pair 254743706010",
-        ".pair +254743706010"
+        ".pair 254114141192",
+        ".pair +254737681758"
       ],
       notes: [
         "🌍 Include country code with your number",
@@ -256,8 +256,8 @@ Visit silvatech.top for assistance.`;
   // Plugin metadata for modern bot systems
   metadata: {
     version: "2.0.0",
-    author: "SILVA TECH",
-    repository: "https://github.com/SilvaTechB/silva-md-bot",
+    author: "BELTAH TECH",
+    repository: "https://github.com/Beltah254",
     license: "MIT",
     compatibility: ["baileys", "whatsapp-web.js"],
     dependencies: ["axios"]

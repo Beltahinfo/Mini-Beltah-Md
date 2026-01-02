@@ -36,7 +36,7 @@ module.exports = {
 
     const summary = await getGeminiSummary(textContent);
     await socket.sendMessage(sender, {
-      text: `🧠 *Silva AI Summary:*\n\n${summary}`,
+      text: `🧠 *Beltah AI Summary:*\n\n${summary}`,
       contextInfo: { forwardingScore: 999, isForwarded: true }
     });
   }

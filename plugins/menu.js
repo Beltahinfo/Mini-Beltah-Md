@@ -6,7 +6,7 @@ const axios = require('axios');
 const { prepareWAMessageMedia, generateWAMessageFromContent, proto } = require('@whiskeysockets/baileys');
 
 const IMAGES = [
-'https://files.catbox.moe/5uli5p.jpeg',
+'',
 // Add more images later
 ];
 
@@ -30,16 +30,16 @@ return `${hours}h ${minutes}m ${seconds}s`;
  * Full Help Message (used only for building slides)
  */
 const HELP_MESSAGE = `
-# SILVA MD BOT
-╭━━━〔 ⚡ SILVA MD BOT ⚡ 〕━━━┈⊷
-┃⚙️ USER: ${config.BOT_NAME || 'Silva MD'}
+# BELTAH-MINI-BOT
+╭━━━〔 ⚡ BELTAH-MD BOT ⚡ 〕━━━┈⊷
+┃⚙️ USER: ${config.BOT_NAME || 'Beltah MD'}
 ┃🌐 MODE: PUBLIC
 ┃💠 PREFIX: ${config.PREFIX}
 ┃🧠 VERSION: 1.0.0
 ┃🕐 UPTIME: ${getUptime()}
 ╰━━━━━━━━━━━━━━━┈⊷
 
-👋 Welcome to Silva MD — your digital powerhouse 💫
+👋 Welcome to Beltah MD — your digital powerhouse 💫
 ${READ_MORE}
 
 # 📥 DOWNLOAD COMMANDS
@@ -125,18 +125,18 @@ Text-to-speech and conversion tools!
 ${READ_MORE}
 
 # 📞 CONTACT & SUPPORT
-🔰 SILVA MD MINI BOT 🔰
+🎮 BELTAH MINI BOT 🎮
 
 💬 DEVELOPER:
-https://github.com/SilvaTechB
+* Beltah Tech 254 🇰🇪 
 
 📢 SUPPORT CHANNEL:
-https://whatsapp.com/channel/0029VaAkETLLY6d8qhLmZt2v
+https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F
 
 👥 SUPPORT GROUP:
 https://chat.whatsapp.com/J1h8UQencpe7wTwvS7hHxj
 
-Powered by SilvaTechB
+Powered by Beltah Tech Team 
 `.trim();
 
 /**
@@ -164,7 +164,7 @@ const quoted = message || null;
 
 try {
 // Replace placeholder with actual pushname
-const personalizedHelpMessage = HELP_MESSAGE.replace('${config.BOT_NAME || \"Silva MD\"}', pushname);
+const personalizedHelpMessage = HELP_MESSAGE.replace('${config.BOT_NAME || \"Beltah MD\"}', pushname);
 
 const sections = personalizedHelpMessage.split('# ').filter(Boolean).map(s => '# ' + s);
 const cards = [];
@@ -188,7 +188,7 @@ for (let i = 0; i < sections.length; i++) {
   const header = proto.Message.InteractiveMessage.Header.create({  
     ...(media || {}),  
     title: `*${title}*`,  
-    subtitle: "⚡ Silva MD Bot",  
+    subtitle: "⚡Beltah Mini Bot",  
     hasMediaAttachment: !!media,  
   });  
 
@@ -218,7 +218,7 @@ const carouselMessage = generateWAMessageFromContent(
       message: {  
         interactiveMessage: {  
           body: { text: "*🔄 Swipe to navigate menu*" },  
-          footer: { text: "© SilvaTechB • Silva MD Bot" },  
+          footer: { text: "© Beltahinfo • Beltah Mini Bot" },  
           carouselMessage: { cards, messageVersion: 1 },  
           contextInfo: { 
             forwardingScore: 0, 
@@ -273,7 +273,7 @@ sock.ev.on('messages.upsert', listener);
 console.error('Slide Menu Error:', error);
 // Fallback to regular menu
 const fallbackMenu = `
-╭━━━〔 ⚡ SILVA MD BOT ⚡ 〕━━━┈⊷
+╭━━━〔 ⚡ BELTAH MD BOT ⚡ 〕━━━┈⊷
 ┃⚙️ USER: ${pushname}
 ┃🌐 MODE: PUBLIC
 ┃💠 PREFIX: ${config.PREFIX}
@@ -297,7 +297,7 @@ await sock.sendMessage(chatId, {
 module.exports = {
 command: "menu",
 description: "To get the interactive slide menu.",
-react: "🥰",
+react: "♻️",
 category: "main",
 execute: async (socket, msg, args, number) => {
 try {

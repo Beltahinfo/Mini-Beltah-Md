@@ -1,9 +1,9 @@
 # [DEPLOY](https://dashboard.heroku.com/new?template=)
-# 🤖 SILVA-MD MINI BOT
+# 🤖 BELTAH-MD MINI BOT
 
 <div align="center">
 
-![SILVA-MD](https://files.catbox.moe/5uli5p.jpeg)
+![BELTAH-MD](https://files.catbox.moe/9l9k6x.jpg)
 
 ### ✨ *Advanced WhatsApp Bot with Multi-Device Support* ✨
 
@@ -345,7 +345,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Support**
 
-- **Developer:** Silva Tech
+- **Developer:** Beltah Tech 254 🇰🇪 
 - **Website:** [silvatech.top](https://silvatech.top)
 - **Issues:** [GitHub Issues](https://github.com/your-username/silva-md-mini/issues)
 - **Documentation:** [Wiki](https://github.com/your-username/silva-md-mini/wiki)
@@ -356,6 +356,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### **⭐ Star this repository if you find it helpful!**
 
-**SILVA-MD MINI BOT** - *Powering your WhatsApp experience* 🤖
+**BELTAH-MD MINI BOT** - *Powering your WhatsApp experience* 🤖
 
 </div>

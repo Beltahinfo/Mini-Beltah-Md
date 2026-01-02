@@ -25,7 +25,7 @@ module.exports = {
 
     const caption = `
 ╭───────────────⭓
-│ ᴍɪɴɪ silva - ɢʀᴏᴜᴘ ᴛᴀɢɢᴇʀ   
+│ ᴍɪɴɪ Beltah - ɢʀᴏᴜᴘ ᴛᴀɢɢᴇʀ   
 │  
 │  🏷️ ɢʀᴏᴜᴘ : ${groupName}
 │  👑 ᴀᴅᴍɪɴ : ${adminCount}
@@ -34,14 +34,14 @@ module.exports = {
 │  
 │  📨 ᴍᴇꜱꜱᴀɢᴇ:  
 ╰───────────────⭓
-> ᴛᴀɢᴀʟʟ ʙʏ ᴍɪɴɪ silva md
+> ᴛᴀɢᴀʟʟ ʙʏ ᴍɪɴɪ Beltah md
 
 ${mentionsText}
   
-> ᴍᴀᴅᴇ ɪɴ ʙʏ silva tech nexus`;
+> ᴍᴀᴅᴇ ɪɴ ʙʏ Beltah Tech Team`;
 
     await sock.sendMessage(msg.key.remoteJid, {
-      image: { url: "https://files.catbox.moe/5uli5p.jpeg" },
+      image: { url: "https://files.catbox.moe/9l9k6x.jpg" },
       caption: caption,
       mentions: participants
     }, { quoted: msg });

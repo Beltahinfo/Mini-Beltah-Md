@@ -12,7 +12,7 @@ module.exports = {
     const latency = Date.now() - start;
     
     await sock.sendMessage(msg.key.remoteJid, { 
-      text: `*the power of silva...😊🌹*\n*Latency:* ${latency}ms` 
+      text: `*BELTAH-MINI-BOT*\n*Latency:* ${latency}ms\n\n> Powered by Beltah Tech Team` 
     }, { quoted: msg });
   }
 };

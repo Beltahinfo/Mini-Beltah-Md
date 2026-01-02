@@ -41,7 +41,7 @@ module.exports = {
       const album = song.albumName || "Unknown Album";
       const duration = song.duration ? `${song.duration}s` : "N/A";
       const lyrics = song.plainLyrics?.trim() || "No lyrics found 😢";
-      const thumb = "https://files.catbox.moe/5uli5p.jpeg";
+      const thumb = "https://files.catbox.moe/9l9k6x.jpg";
 
       const shortLyrics =
         lyrics.length > 900
@@ -49,7 +49,7 @@ module.exports = {
           : lyrics;
 
       const caption = `
-*👑 SILVA MINI-MD LYRICS 👑*
+*👑 BELTAH MINI-MD LYRICS 👑*
 
 *🎵 NAME:* ${title}
 *🎤 ARTIST:* ${artist}

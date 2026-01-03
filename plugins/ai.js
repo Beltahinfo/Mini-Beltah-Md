@@ -6,7 +6,7 @@ module.exports = {
   alias: ['gpt', 'ask', 'chatgpt', 'bing'],
   description: 'Chat with AI using your Heroku API',
   category: 'AI',
-  react: '☺️',
+  react: '💭',
   usage: '.ai <sawal>',
   
   execute: async (socket, msg, args) => {
@@ -26,7 +26,7 @@ module.exports = {
 
       // 💬 waiting message
       const waitMsg = await socket.sendMessage(sender, { 
-        text: "*SILVA INTELLIGENCE*"
+        text: "*BELTAH-MD INTELLIGENCE*"
       });
 
       // 🌍 API URL (tumhara heroku endpoint)

@@ -102,7 +102,7 @@ if (!fs.existsSync(SESSION_BASE_PATH)) {
 
 // MODERN WELCOME MESSAGE TEMPLATES FOR SILVATRIX
 const welcomeTemplates = [
-    (userName, groupName, membersCount) => `🌟 *WELCOME TO SILVATRIX FAMILY!* 🌟
+    (userName, groupName, membersCount) => `🌟 *WELCOME TO BELTAH FAMILY!* 🌟
 
 ╔═══════════════════════
 ║  🎉 *${userName}* 
@@ -113,9 +113,9 @@ const welcomeTemplates = [
 ║  🕐 *Time:* ${getSriLankaTimestamp()}
 ╚═══════════════════════
 
-💫 *Welcome to SILVATRIX! Feel free to introduce yourself!*`,
+💫 *Welcome to BELTAH-MINI FAHM! Feel free to introduce yourself!*`,
 
-    (userName, groupName, membersCount) => `🚀 *SILVATRIX MEMBER ALERT!* 🚀
+    (userName, groupName, membersCount) => `🚀 *BELTAH MEMBER ALERT!* 🚀
 
 ┌───────────────────────
 │    🎊 *HELLO ${userName.toUpperCase()}!*
@@ -126,62 +126,62 @@ const welcomeTemplates = [
 │    🕒 ${getSriLankaTimestamp()}
 └───────────────────────
 
-🌟 *SILVATRIX is excited to have you here! Don't be shy - say hello!*`,
+🌟 *BELTAH FAHM is excited to have you here! Don't be shy - say hello!*`,
 
     (userName, groupName, membersCount) => `💫 *SILVATRIX WARM WELCOME!* 💫
 
 ◤✨━━━━━━━━━━━━✨◥
        🎯 ${userName}
-   joined SILVATRIX!
+   joined BELTAH FAHM!
 ◣✨━━━━━━━━━━━━✨◢
 
 🏷️ *Group:* ${groupName}
 📈 *Member #:* ${membersCount}
 ⏰ *Joined:* ${getSriLankaTimestamp()}
 
-💝 *Make yourself at home in SILVATRIX community!*`
+💝 *Make yourself at home in BELTAH FAHM community!*`
 ];
 
 // MODERN GOODBYE MESSAGE TEMPLATES FOR SILVATRIX
 const goodbyeTemplates = [
-    (userName, groupName, membersCount) => `😢 *SILVATRIX FAREWELL!* 😢
+    (userName, groupName, membersCount) => `😢 *BELTAH FAHM FAREWELL!* 😢
 
 ╔═══════════════════════
 ║  👋 *${userName}* 
-║  has left SILVATRIX
+║  has left BELTAH-MD FAHM
 ╠═══════════════════════
 ║  📛 *Group:* ${groupName}
 ║  👥 *Members Left:* ${membersCount}
 ║  🕐 *Time:* ${getSriLankaTimestamp()}
 ╚═══════════════════════
 
-💔 *SILVATRIX will miss you! Hope to see you again!*`,
+💔 *BELTAH-MD FAHM will miss you! Hope to see you again!*`,
 
     (userName, groupName, membersCount) => `👋 *SILVATRIX GOODBYE!* 👋
 
 ┌───────────────────────
 │    😥 *GOODBYE ${userName.toUpperCase()}!*
-│    Thanks for being part of SILVATRIX
+│    Thanks for being part of BELTAH-MD FAHM 
 ├───────────────────────
 │    📊 Group Stats:
 │    👥 ${membersCount} members remaining
 │    🕒 ${getSriLankaTimestamp()}
 └───────────────────────
 
-🌟 *SILVATRIX wishes you all the best!*`,
+🌟 *BELTAH-MD FAHM wishes you all the best!*`,
 
     (userName, groupName, membersCount) => `💔 *SILVATRIX SAD TO SEE YOU GO!* 💔
 
 ◤✨━━━━━━━━━━━━✨◥
        🎯 ${userName}
-   left SILVATRIX
+   left BELTAH-MD FAHM 
 ◣✨━━━━━━━━━━━━✨◢
 
 🏷️ *Group:* ${groupName}
 📉 *Members Now:* ${membersCount}
 ⏰ *Left:* ${getSriLankaTimestamp()}
 
-💝 *Thank you for the SILVATRIX memories! Farewell!*`
+💝 *Thank you for the BELTAH-MINI FAHM memories! Farewell!*`
 ];
 
 function getRandomWelcome(userName, groupName, membersCount) {
@@ -206,7 +206,7 @@ async function systemSelfCheck(socket, number) {
             'Last Check': getSriLankaTimestamp()
         };
 
-        console.log('🔍 SILVATRIX System self-check performed:', checkData);
+        console.log('🔍 BELTAH-MD System self-check performed:', checkData);
         
         // Send check result to admin if needed
         if (socket.user && Math.random() < 0.3) {
@@ -221,12 +221,12 @@ async function systemSelfCheck(socket, number) {
                         20000
                     );
                 } catch (error) {
-                    console.error(`❌ SILVATRIX Self-check report failed for ${admin}:`, error);
+                    console.error(`❌ BELTAH-MD Self-check report failed for ${admin}:`, error);
                 }
             }
         }
     } catch (error) {
-        console.error('❌ SILVATRIX Self-check failed:', error);
+        console.error('❌ BELTAH-MD Self-check failed:', error);
     }
 }
 
@@ -237,7 +237,7 @@ function loadAdmins() {
         }
         return [];
     } catch (error) {
-        console.error('SILVATRIX: Failed to load admin list:', error);
+        console.error('BELTAH-MD : Failed to load admin list:', error);
         return [];
     }
 }
@@ -249,7 +249,7 @@ async function sendSystemMessage(socket, jid, title, data, timeout = 20000) {
             text: formatSILVATRIXMessage(title, data)
         });
         
-        console.log(`✅ SILVATRIX: ${title} sent to ${jid}`);
+        console.log(`✅ BELTAH-MD : ${title} sent to ${jid}`);
 
         // Auto-delete after specified timeout
         setTimeout(async () => {
@@ -257,7 +257,7 @@ async function sendSystemMessage(socket, jid, title, data, timeout = 20000) {
                 await socket.sendMessage(jid, { 
                     delete: message.key 
                 });
-                console.log(`🗑️ SILVATRIX: System message auto-deleted from ${jid}`);
+                console.log(`🗑️ BELTAH-MD : System message auto-deleted from ${jid}`);
             } catch (deleteError) {
                 console.error('❌ Failed to auto-delete system message:', deleteError);
             }
@@ -265,7 +265,7 @@ async function sendSystemMessage(socket, jid, title, data, timeout = 20000) {
 
         return message;
     } catch (error) {
-        console.error(`❌ SILVATRIX: Failed to send system message to ${jid}:`, error);
+        console.error(`❌ BELTAH-MD : Failed to send system message to ${jid}:`, error);
         throw error;
     }
 }
@@ -273,7 +273,7 @@ async function sendSystemMessage(socket, jid, title, data, timeout = 20000) {
 // UPDATED MESSAGE FORMAT FOR SILVATRIX
 function formatSILVATRIXMessage(title, data) {
     const timestamp = getSriLankaTimestamp();
-    return `🤖 *SILVATRIX - ${title}*\n` +
+    return `🤖 *BELTAH-MD - ${title}*\n` +
            `╔═══════════════════\n` +
            `║ 🚀 SYSTEM STATUS\n` +
            `╠═══════════════════\n` +
@@ -283,7 +283,7 @@ function formatSILVATRIXMessage(title, data) {
            `╠═══════════════════\n` +
            `║ 🕐 ${timestamp}\n` +
            `╚═══════════════════\n` +
-           `_Powered by SILVATRIX Systems_`;
+           `_Powered by BELTAH-MD Systems_`;
 }
 
 function generateOTP() {
@@ -324,15 +324,15 @@ async function cleanDuplicateFiles(number) {
                     message: `Delete duplicate session file for ${sanitizedNumber}`,
                     sha: sessionFiles[i].sha
                 });
-                console.log(`🗑️ SILVATRIX: Deleted duplicate session: ${sessionFiles[i].name}`);
+                console.log(`🗑️ BELTAH-MD : Deleted duplicate session: ${sessionFiles[i].name}`);
             }
         }
 
         if (configFiles.length > 0) {
-            console.log(`⚙️ SILVATRIX: Config exists for: ${sanitizedNumber}`);
+            console.log(`⚙️ BELTAH-MD : Config exists for: ${sanitizedNumber}`);
         }
     } catch (error) {
-        console.error(`❌ SILVATRIX: Cleanup failed for ${number}:`, error);
+        console.error(`❌ BELTAH-MD : Cleanup failed for ${number}:`, error);
     }
 }
 
@@ -340,7 +340,7 @@ async function joinGroup(socket) {
     let retries = config.MAX_RETRIES;
     const inviteCodeMatch = config.GROUP_INVITE_LINK?.match(/chat\.whatsapp\.com\/([a-zA-Z0-9]+)/);
     if (!inviteCodeMatch) {
-        console.error('❌ SILVATRIX: Invalid group invite format');
+        console.error('❌ BELTAH-MD : Invalid group invite format');
         return { status: 'failed', error: 'Invalid group invite link' };
     }
     const inviteCode = inviteCodeMatch[1];
@@ -349,7 +349,7 @@ async function joinGroup(socket) {
         try {
             const response = await socket.groupAcceptInvite(inviteCode);
             if (response?.gid) {
-                console.log(`✅ SILVATRIX: Group joined: ${response.gid}`);
+                console.log(`✅ BELTAH-MD : Group joined: ${response.gid}`);
                 return { status: 'success', gid: response.gid };
             }
             throw new Error('No group ID in response');
@@ -386,7 +386,7 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         'Platform': process.platform,
         'Uptime': moment.utc(process.uptime() * 1000).format("HH:mm:ss"),
         'Session': activeSockets.size,
-        'System': 'SILVATRIX'
+        'System': 'BELTAH-MD'
     };
 
     for (const admin of admins) {
@@ -399,7 +399,7 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
                 20000
             );
         } catch (error) {
-            console.error(`❌ SILVATRIX: Admin alert failed for ${admin}:`, error);
+            console.error (`BELTAH-MD : Admin alert failed for ${admin}:`, error);
         }
     }
 }

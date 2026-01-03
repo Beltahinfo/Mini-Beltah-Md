@@ -12,10 +12,10 @@ module.exports = {
     const minutes = Math.floor((uptime % 3600) / 60);
     const seconds = Math.floor(uptime % 60);
 
-    const menumsg = `*👑 SILVA-MD MINI BOT UPTIME 👑*\n\n*⏱️ UPTIME:* ${hours}h ${minutes}m ${seconds}s\n\n*🔥 Bot is running smoothly!*`;
+    const menumsg = `*👑 BELTAH-MD MINI BOT UPTIME 👑*\n\n*⏱️ UPTIME:* ${hours}h ${minutes}m ${seconds}s\n\n*🔥 Bot is running smoothly!*`;
 
     await socket.sendMessage(sender, {
-      image: { url: 'https://files.catbox.moe/5uli5p.jpeg' },
+      image: { url: 'https://files.catbox.moe/9l9k6x.jpg' },
       caption: menumsg,
       contextInfo: {
         mentionedJid: [sender],
@@ -23,13 +23,13 @@ module.exports = {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363200367779016@newsletter',
-          newsletterName: 'SILVA MINI BOT',
+          newsletterName: 'BELTAH-MINI-BOT',
           serverMessageId: 143,
         },
       },
     });
 
-    const uptimeMessage = `*👑 UPTIME :❯ ${hours}h ${minutes}m ${seconds}s 👑*`;
+    const uptimeMessage = `*BELTAH-MD UPTIME : ${hours}h ${minutes}m ${seconds}s*\n\n> Powered by Beltah Tech Team`;
 
     await socket.sendMessage(sender, { text: uptimeMessage }, { quoted: msg });
   }

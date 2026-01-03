@@ -2,7 +2,7 @@ const axios = require("axios");
 const config = require("../config");
 
 // App URL - Updated to match your domain
-const APP_BASE_URL = 'https://mini-beltah-md.onrender.com';
+const APP_BASE_URL = 'https://mini-beltah-md.onrender.com/';
 
 module.exports = {
   command: "pair",
